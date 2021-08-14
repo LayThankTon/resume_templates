@@ -5,32 +5,105 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TapCode App</title>
 
     <style>
         body {
-            background-color: lightblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: whitesmoke;
+            color: teal;
         }
 
-        h1 {
-            color: white;
-            text-align: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
         }
 
-        p {
-            font-family: verdana;
-            font-size: 20px;
+        div.line {
+            height: 1px;
+            width: 100%;
+            background-color: teal;
+            margin-top: 24px;
+        }
+
+        p.h1 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 20px;
+            padding: 0px 8px;
+            background-color: whitesmoke;
+        }
+
+        p.h2 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 13px;
+            line-height: 15px;
+            padding: 0px 8px;
+            background-color: whitesmoke;
+        }
+
+        p.h3 {
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 10px;
+            line-height: 12px;
+            padding: 0px 8px;
+            background-color: whitesmoke;
+        }
+
+        div.icon {
+            padding: 8px;
+            border-radius: 50px;
+            background-color: teal;
         }
     </style>
 </head>
 
-<body>
-    <h1>Hello world, Chào mọi người</h1>
-    <img width=300 height='100%' src="https://dichvuquangcao.vn/wp-content/uploads/2020/01/e.png">
-    <p>
-        ngày xửa ngày xưa trong một khu rưng nọ có cô gái quàng khăn đỏ.
-    </p>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="100" height="100" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z" fill="gray"/></svg>
+<body style="background-color: whitesmoke;">
+    <div style="flex-direction: row; align-items: flex-start;">
+
+        <div style="
+        width: 245px;
+        padding: 24px 12px 36px 8px;">
+            <div style=" width: 100px;height: 100px;
+            background-color: gray;border-radius: 50px;
+            justify-content: center;overflow: hidden;">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" width="80" height="80" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+                    <path
+                        d="M7.5 6.5C7.5 8.981 9.519 11 12 11s4.5-2.019 4.5-4.5S14.481 2 12 2S7.5 4.019 7.5 6.5zM20 21h1v-1c0-3.859-3.141-7-7-7h-4c-3.86 0-7 3.141-7 7v1h17z"
+                        fill="lightgray" /></svg>
+            </div>
+
+            <div class="line""></div>
+            <p class=" h1" style=" margin-top: -12px; ">
+                NGUYỄN VĂN A
+                </p>
+                <p class="h3" style="margin-top: 0px; ">
+                    NHÀN VIÊN KINH DOANH
+                </p>
+            </div>
+            <div style="height: 792px;width: 1px; background-color: teal;"></div>
+
+            <div style="width: 367px; padding: 24px 8px 36px 12px;">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" width="16" height="16" preserveAspectRatio="xMidYMid meet"
+                        viewBox="0 0 16 16">
+                        <g fill="white">
+                            <path
+                                d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="line"">
+
+                </div><p class=" h2" style="margin-top: -9px;">MỤC TIÊU</p>
+                </div>
 </body>
 
 </html>
