@@ -26,28 +26,36 @@
     h1 {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 20px;
+        line-height: 30px;
         padding: 0px 8px;
         background-color: white;
         margin: 0px;
+    }
+
+    h1.title {
+        margin-top: -15px;
     }
 
     h2 {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 13px;
-        line-height: 23px;
+        font-size: 16px;
+        line-height: 26px;
         padding: 0px 8px;
         background-color: white;
         margin: 0px;
     }
 
+    h2.title {
+        margin-top: -13px;
+    }
+
     h3 {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 22px;
         padding: 0px 8px;
         background-color: white;
         margin: 0px;
@@ -67,7 +75,7 @@
     hr {
         width: 100%;
         margin: 0px;
-        margin-top: 24px;
+        margin-top: 16px;
         border-top: 1px solid teal;
     }
 
@@ -81,8 +89,8 @@
     ul li {
         display: flex;
         align-items: center;
-        font-size: 10px;
-        line-height: 20px;
+        font-size: 12px;
+        line-height: 22px;
     }
 
     ul li span:nth-child(1):first-letter {
@@ -94,11 +102,11 @@
     }
 
     ul.profile.myself li span:nth-child(1) {
-        width: 50px;
+        width: 80px;
     }
 
     ul.profile.language li span:nth-child(1) {
-        width: 25px;
+        width: 80px;
     }
 
     div.bar-border {
@@ -115,6 +123,19 @@
         background-color: teal;
     }
 
+    .margin-base {
+        margin-top:3px;
+    }
+
+    .margin-padding {
+        margin-top: 16px;
+    }
+
+    svg {
+        width: 20px;
+        height: 20px;
+    }
+
     </style>
 </head>
 
@@ -122,17 +143,17 @@
     <div style="flex-direction: row; align-items: flex-start;">
         <div style="
         width: 40%;
-        padding: 24px 12px 36px 8px;
+        padding: 24px 12px 24px 8px;
         border: 0px solid teal;
         border-right-width: 1px;
         ">
-            <div class="icon">
+            <div class="icon" style="margin-bottom: 8px;">
                 <img style="border-radius: 100px;border: 1px solid white;" src="https://res.cloudinary.com/good-assistant/image/upload/v1625845045/avatar/r9ykvittktjz2gsluku8.jpg" alt="Avatar" width="100" height="100">
             </div>
                 <hr>
-                <h1  style=" margin-top: -15px; ">NGUYỄN VĂN A</h1>
+                <h1  class="title">NGUYỄN VĂN A</h1>
                 <h3>NHâN VIÊN KINH DOANH</h3>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                         <g fill="none">
                             <path d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 1 1-18 0a9 9 0 0 1 18 0z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -140,11 +161,11 @@
                     </svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">thông tin</h2>
-                <ul class="profile myself" style=" margin-top: 12px;">
+                <h2 class="title">thông tin</h2>
+                <ul class="profile myself margin-base">
                     <li>
                         <span>giới tính</span>
-                        <span>nữ</span>
+                        <span>nam</span>
                     </li>
                     <li>
                         <span>Ngày sinh</span>
@@ -163,7 +184,7 @@
                         <span>44 Hoàng Van Thu, khu pho 2, phuong Binh Tri Thien, Quan 4, Thanh pho Ho Chi Minh</span>
                     </li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
                         <g fill="white">
                             <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59c-.125.36-.479 1.013-1.04 1.639c-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545c1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484c.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464c.201-.263.38-.578.488-.901c.11-.33.172-.762.004-1.149c.069-.13.12-.269.159-.403c.077-.27.113-.568.113-.857c0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362a1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272c-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05a9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164c-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868c-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65c1.095-.3 1.977-.996 2.614-1.708c.635-.71 1.064-1.475 1.238-1.978c.243-.7.407-1.768.482-2.85c.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725a.5.5 0 0 0 .595.644l.003-.001l.014-.003l.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164c.175.058.45.3.57.65c.107.308.087.67-.266 1.022l-.353.353l.353.354c.043.043.105.141.154.315c.048.167.075.37.075.581c0 .212-.027.414-.075.582c-.05.174-.111.272-.154.315l-.353.353l.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353l.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
@@ -171,21 +192,21 @@
                     </svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">KỸ NĂNG</h2>
-                <ul style=" margin-top: 12px;">
+                <h2 class="title">KỸ NĂNG</h2>
+                <ul class="margin-base">
                     <li><span>làm việc nhóm.</span></li>
                     <li><span>học hiệu quả.</span></li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
                         <path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" /></svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">sở THÍCH</h2>
-                <ul style=" margin-top: 12px;">
+                <h2 class="title">sở THÍCH</h2>
+                <ul class="margin-base">
                     <li><span>Du lịch, chụp ánh.</span></li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
                         <path d="M11 24h4v2h-4z" fill="white" />
                         <path d="M5 24h4v2H5z" fill="white" />
@@ -197,9 +218,9 @@
                         <path d="M16 16a7 7 0 1 1 7-7a7 7 0 0 1-7 7zm0-12a5 5 0 0 0-5 5a5 5 0 0 0 10 0a5 5 0 0 0-5-5z" fill="white" /></svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">NGƯỜI THAM KHẢO</h2>
-                <h3 style="align-self: flex-start;margin-top: 12px;">NGUYÊN VĂN B</h3>
-                <ul class="profile" style=" margin-top: 8px;">
+                <h2 class="title">NGƯỜI THAM KHẢO</h2>
+                <h3 class="margin-base" style="align-self: flex-start;">NGUYÊN VĂN B</h3>
+                <ul class="profile margin-base">
                     <li>
                         <span>Công ty</span>:
                         <span>Công ty CP ABC</span>
@@ -218,26 +239,26 @@
                     </li>
                 </ul>
             </div>
-            <div style=" width: 60%; padding: 24px 8px 36px 12px;">
+            <div style=" width: 60%; padding: 24px 8px 24px 12px;">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                         <path d="M11 2v2.07A8.002 8.002 0 0 0 4.07 11H2v2h2.07A8.002 8.002 0 0 0 11 19.93V22h2v-2.07A8.002 8.002 0 0 0 19.93 13H22v-2h-2.07A8.002 8.002 0 0 0 13 4.07V2m-2 4.08V8h2V6.09c2.5.41 4.5 2.41 4.92 4.91H16v2h1.91c-.41 2.5-2.41 4.5-4.91 4.92V16h-2v1.91C8.5 17.5 6.5 15.5 6.08 13H8v-2H6.09C6.5 8.5 8.5 6.5 11 6.08M12 11a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1z" fill="white" /></svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">MỤC TIÊU</h2>
-                <ul style=" margin-top: 12px;">
+                <h2 class="title">MỤC TIÊU</h2>
+                <ul class="margin-base">
                     <li><span>- Được làm việc trong môi trưởng chuyên nghiệp.</span></li>
                     <li><span>-	Được hướng các chế độ theo luật lao động.</span></li>
                     <li><span>-	Tích lũy thêm nhiều kinh nghiệm cho công việc được hiệu quả và nhanh chóng.</span></li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
                         <path d="M928 444H820V330.4c0-17.7-14.3-32-32-32H473L355.7 186.2a8.15 8.15 0 0 0-5.5-2.2H96c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h698c13 0 24.8-7.9 29.7-20l134-332c1.5-3.8 2.3-7.9 2.3-12c0-17.7-14.3-32-32-32zM136 256h188.5l119.6 114.4H748V444H238c-13 0-24.8 7.9-29.7 20L136 643.2V256zm635.3 512H159l103.3-256h612.4L771.3 768z" fill="white" /></svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">kinh nghiệm</h2>
-                <h3 style="align-self: flex-start;margin-top: 12px;">03-2015 - 02-2016 : TEAM LEAD</h3>
-                <ul class="profile" style=" margin-top: 8px;">
+                <h2 class="title">kinh nghiệm</h2>
+                <h3 class="margin-base" style="align-self: flex-start;">03-2015 - 02-2016 : TEAM LEAD</h3>
+                <ul class="profile margin-base">
                     <li>
                         <span>Công ty</span>:
                         <span>Công ty CP ABC</span>
@@ -251,7 +272,7 @@
                         <span>Duy trì mối quan hệ giữa công ty và đối tác. Tổng hợp, phân tích báo cáo từ nhân viên kinh doanh và nhân viên chăm sóc khách hàng từ đó lập kế hoạch kinh doanh cụ thể cho Team.</span>
                     </li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
                         <path d="M26 30h-2v-3a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v3H6v-3a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7z" fill="white" />
                         <path d="M5 6a1 1 0 0 0-1 1v9h2V7a1 1 0 0 0-1-1z" fill="white" />
@@ -259,9 +280,9 @@
 
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">học vấn</h2>
-                <h3 style="align-self: flex-start;margin-top: 12px;">07-2011 - 01 -2015 : HỌC VIỆN TÀI CHÍNH</h3>
-                <ul class="profile" style=" margin-top: 8px;">
+                <h2 class="title">học vấn</h2>
+                <h3 class="margin-base" style="align-self: flex-start;">07-2011 - 01 -2015 : HỌC VIỆN TÀI CHÍNH</h3>
+                <ul class="profile margin-base">
                     <li>
                         <span>chuyên ngành</span>:
                         <span>tài chính ngân hàng</span>
@@ -275,15 +296,15 @@
                         <span>giỏi</span>
                     </li>
                 </ul>
-                <div class="icon" style="margin-top: 24px;">
+                <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
                         <path d="M363 176L246 464h47.24l24.49-58h90.54l24.49 58H480zm-26.69 186L363 279.85L389.69 362z" fill="white" />
                         <path d="M272 320c-.25-.19-20.59-15.77-45.42-42.67c39.58-53.64 62-114.61 71.15-143.33H352V90H214V48h-44v42H32v44h219.25c-9.52 26.95-27.05 69.5-53.79 108.36c-32.68-43.44-47.14-75.88-47.33-76.22L143 152l-38 22l6.87 13.86c.89 1.56 17.19 37.9 54.71 86.57c.92 1.21 1.85 2.39 2.78 3.57c-49.72 56.86-89.15 79.09-89.66 79.47L64 368l23 36l19.3-11.47c2.2-1.67 41.33-24 92-80.78c24.52 26.28 43.22 40.83 44.3 41.67L255 362z" fill="white" /></svg>
                 </div>
                 <hr>
-                <h2 style=" margin-top: -13px;">ngoại ngữ</h2>
-                <h3 style="align-self: flex-start;margin-top: 12px;">tiếng anh</h3>
-                <ul class="profile language" style=" margin-top: 8px;">
+                <h2 class="title">ngoại ngữ</h2>
+                <h3 class="margin-base" style="align-self: flex-start;">tiếng anh</h3>
+                <ul class="profile language margin-base">
                     <li>
                         <span>nghe</span>
                         <div class="bar-border">
