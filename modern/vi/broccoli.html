@@ -11,7 +11,7 @@
     body {
         font-family: Arial, Helvetica, sans-serif;
         background-color: white;
-        color: teal;
+        color: {primary_color};
         margin: 0px;
         padding: 0px;
     }
@@ -70,14 +70,14 @@
     div.icon {
         padding: 8px;
         border-radius: 100px;
-        background-color: teal;
+        background-color: {primary_color};
     }
 
     hr {
         width: 100%;
         margin: 0px;
         margin-top: 16px;
-        border-top: 1px solid teal;
+        border-top: 1px solid {primary_color};
     }
 
     ul {
@@ -121,7 +121,7 @@
 
     div.bar-score {
         height: 10px;
-        background-color: teal;
+        background-color: {primary_color};
     }
 
     .margin-base {
@@ -145,7 +145,7 @@
         <div style="
         width: 40%;
         padding: 24px 12px 24px 8px;
-        border: 0px solid teal;
+        border: 0px solid {primary_color};
         border-right-width: 1px;
         ">
             <div class="icon" style="margin-bottom: 8px;">
@@ -180,7 +180,7 @@
                     </li>
                     <li>
                         <span>Điện thoại</span>
-                        <span>{phone_number}</span>
+                        <span>{phone}</span>
                     </li>
                     <li>
                         <span>Địa chi</span>
@@ -197,7 +197,6 @@
                 <hr>
                 <h2 class="title">KỸ NĂNG</h2>
                 <ul class="margin-base">
-                    <!-- <li><span>string</span></li> -->
                     {skills}
                 </ul>
                 <div class="icon margin-padding">
@@ -207,7 +206,6 @@
                 <hr>
                 <h2 class="title">sở THÍCH</h2>
                 <ul class="margin-base">
-                    <!-- <li><span>string</span></li> -->
                     {hobbies}
                 </ul>
                 <div class="icon margin-padding">
@@ -223,24 +221,8 @@
                 </div>
                 <hr>
                 <h2 class="title">NGƯỜI THAM KHẢO</h2>
-                <h3 class="margin-base">NGUYÊN VĂN B</h3>
                 <ul class="profile margin-base">
-                    <li>
-                        <span>Công ty</span>:
-                        <span>Công ty CP ABC</span>
-                    </li>
-                    <li>
-                        <span>chức vụ</span>:
-                        <span>Phó giám đốc</span>
-                    </li>
-                    <li>
-                        <span>Email</span>:
-                        <span>nguyenvanb@gmail.com</span>
-                    </li>
-                    <li>
-                        <span>Điện thoại</span>:
-                        <span>092243565766</span>
-                    </li>
+                    {references}
                 </ul>
             </div>
             <div style=" width: 60%; padding: 24px 8px 24px 12px;">
@@ -251,9 +233,7 @@
                 <hr>
                 <h2 class="title">MỤC TIÊU</h2>
                 <ul class="margin-base">
-                    <li><span>- Được làm việc trong môi trưởng chuyên nghiệp.</span></li>
-                    <li><span>-	Được hướng các chế độ theo luật lao động.</span></li>
-                    <li><span>-	Tích lũy thêm nhiều kinh nghiệm cho công việc được hiệu quả và nhanh chóng.</span></li>
+                    {career_goals}
                 </ul>
                 <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
@@ -261,20 +241,8 @@
                 </div>
                 <hr>
                 <h2 class="title">kinh nghiệm</h2>
-                <h3 class="margin-base">03-2015 - 02-2016 : TEAM LEAD</h3>
                 <ul class="profile margin-base">
-                    <li>
-                        <span>Công ty</span>:
-                        <span>Công ty CP ABC</span>
-                    </li>
-                    <li>
-                        <span>Mô tả công việc</span>:
-                        <span>Đảm bảo doanh số thị trường được phân công. Mở rộng thị trường tìm đối tác mói. Lập kế hoạch kinh doanh theo tuấn, tháng, quý.</span>
-                    </li>
-                    <li>
-                        <span>Thành tích đạt được</span>:
-                        <span>Duy trì mối quan hệ giữa công ty và đối tác. Tổng hợp, phân tích báo cáo từ nhân viên kinh doanh và nhân viên chăm sóc khách hàng từ đó lập kế hoạch kinh doanh cụ thể cho Team.</span>
-                    </li>
+                    {experiences}
                 </ul>
                 <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
@@ -285,20 +253,8 @@
                 </div>
                 <hr>
                 <h2 class="title">học vấn</h2>
-                <h3 class="margin-base">07-2011 - 01 -2015 : HỌC VIỆN TÀI CHÍNH</h3>
                 <ul class="profile margin-base">
-                    <li>
-                        <span>chuyên ngành</span>:
-                        <span>tài chính ngân hàng</span>
-                    </li>
-                    <li>
-                        <span>trình độ</span>:
-                        <span>đại học</span>
-                    </li>
-                    <li>
-                        <span>tốt nghiệp loại</span>:
-                        <span>giỏi</span>
-                    </li>
+                    {educations}
                 </ul>
                 <div class="icon margin-padding">
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
@@ -307,34 +263,8 @@
                 </div>
                 <hr>
                 <h2 class="title">ngoại ngữ</h2>
-                <h3 class="margin-base" >tiếng anh</h3>
                 <ul class="profile language margin-base">
-                    <li>
-                        <span>nghe</span>
-                        <div class="bar-border">
-                            <div class="bar-score" style="width: 80%;"></div>
-                        </div>
-                    </li>
-                    <li>
-                        <span>nói</span>
-                        <div class="bar-border">
-                            <div class="bar-score" style="width: 90%;"></div>
-                        </div>
-
-                    </li>
-                    <li>
-                        <span>đọc</span>
-                        <div class="bar-border">
-                            <div class="bar-score" style="width: 100%;"></div>
-                        </div>
-
-                    </li>
-                    <li>
-                        <span>viết</span>
-                        <div class="bar-border">
-                            <div class="bar-score" style="width: 69%;"></div>
-                        </div>
-                    </li>
+                    {foreign_languages}
                 </ul>
 
 </body>
