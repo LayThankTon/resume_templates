@@ -1,0 +1,42 @@
+{
+    "color":"teal",
+    "job":"NHÂN VIÊN KINH DOANH",
+    "skills":["Làm việc nhóm.","Học hiệu quả."],
+    "hobbies":["Du lịch","chụp ánh."],
+    "references":[
+        {
+            "name":"NGUYÊN VĂN B",
+            "company":"Công ty CP ABC",
+            "job":"Phó giám đốc",
+            "email":"nguyenvanb@gmail.com",
+            "phone":"0922435657"
+        }
+    ],
+    "careerGoals":["Được làm việc trong môi trưởng chuyên nghiệp.","Được hướng các chế độ theo luật lao động.","Tích lũy thêm nhiều kinh nghiệm cho công việc được hiệu quả và nhanh chóng."],
+    "experiences":[
+        {
+            "period":"03-2015 - 02-2016",
+            "job":"TEAM LEAD",
+            "company":"Công ty CP ABC",
+            "description":"Đảm bảo doanh số thị trường được phân công. Mở rộng thị trường tìm đối tác mói. Lập kế hoạch kinh doanh theo tuấn, tháng, quý.",
+            "achievements":"Duy trì mối quan hệ giữa công ty và đối tác. Tổng hợp, phân tích báo cáo từ nhân viên kinh doanh và nhân viên chăm sóc khách hàng từ đó lập kế hoạch kinh doanh cụ thể cho Team."
+        }
+    ],
+    "educations":[
+        {
+            "period":"07-2011 - 01 -2015",
+            "specialized":"tài chính ngân hàng",
+            "level":"đại học",
+            "graduated":"giỏi"
+        }
+    ],
+    "foreignLanguages":[
+        {
+            "language":"TIẾNG ANH",
+            "listening":80,
+            "speaking":90,
+            "reading":100,
+            "writing":70
+        }
+    ]
+}
