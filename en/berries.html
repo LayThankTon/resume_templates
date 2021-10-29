@@ -17,12 +17,13 @@
         color: var(--main-color);
         margin: 0px;
         padding: 0px;
+        align-items: stretch;
     }
 
     div {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
         justify-content: flex-start;
     }
 
@@ -72,7 +73,7 @@
     }
 
     hr {
-        width: 100%;
+        align-self: stretch;
         margin: 0px;
         margin-top: 16px;
         background-color: white;
@@ -83,7 +84,6 @@
         padding: 0px;
         list-style-type: none;
         align-self: flex-start;
-        width: 100%;
     }
 
     ul li {
@@ -112,16 +112,10 @@
     }
 
     ul.profile.language li span:nth-child(1) {
-        width: 100%;
         margin-top: 8px;
     }
 
-    ul.profile.language li div {
-        width: 100%;
-    }
-
     div.bar-border {
-        width: 100%;
         height: 10px;
         align-items: flex-start;
         border-radius: 100px;
@@ -184,16 +178,15 @@
 </head>
 
 <body>
-    <div style="height: 24px; width: 100%; background-color: var(--main-color);"></div>
-    <div style="flex-direction: row; align-items: flex-start;  background-color: white;">
+    <div style="height: 24px;  background-color: var(--main-color);"></div>
+    <div style="flex-direction: row;  background-color: white;">
         <div style="
-        width: 70%;
+        width: 70%; 
         margin: 0px;
         padding: 24px 12px 24px 8px; 
         background-color: white;
-        align-items: flex-start;
         ">
-            <div style=" flex-direction: row;">
+            <div style=" flex-direction: row; align-items: center;">
                 <div class="icon" style="margin-bottom: 8px;">
                     <img style="border-radius: 50%;" 
                     src="{avatar_image}" 
@@ -206,37 +199,37 @@
                 </div>
 
             </div>
-            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px; width: 100%">
+            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px;">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                     <path d="M11 2v2.07A8.002 8.002 0 0 0 4.07 11H2v2h2.07A8.002 8.002 0 0 0 11 19.93V22h2v-2.07A8.002 8.002 0 0 0 19.93 13H22v-2h-2.07A8.002 8.002 0 0 0 13 4.07V2m-2 4.08V8h2V6.09c2.5.41 4.5 2.41 4.92 4.91H16v2h1.91c-.41 2.5-2.41 4.5-4.91 4.92V16h-2v1.91C8.5 17.5 6.5 15.5 6.08 13H8v-2H6.09C6.5 8.5 8.5 6.5 11 6.08M12 11a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1z" fill="white" /></svg>
-                <h3 class="title" style=" color: white; flex: 1;">career goals</h3>
+                <h3 class="title" style=" color: white;">career goals</h3>
             </div>
             <ul class="margin-base">
                 {career_goals}
             </ul>
-            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px; width: 100%">
+            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px;">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
                     <path d="M26 30h-2v-3a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v3H6v-3a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7z" fill="white" />
                     <path d="M5 6a1 1 0 0 0-1 1v9h2V7a1 1 0 0 0-1-1z" fill="white" />
                     <path d="M4 2v2h5v7a7 7 0 0 0 14 0V4h5V2zm7 2h10v3H11zm5 12a5 5 0 0 1-5-5V9h10v2a5 5 0 0 1-5 5z" fill="white" /></svg>
-                <h3 class="title" style=" color: white; flex: 1;">educations</h3>
+                <h3 class="title" style=" color: white;">educations</h3>
             </div>
             <ul class="profile margin-base">
                 {educations}
             </ul>
 
-            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px; width: 100%">
+            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px;">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024">
                     <path d="M928 444H820V330.4c0-17.7-14.3-32-32-32H473L355.7 186.2a8.15 8.15 0 0 0-5.5-2.2H96c-17.7 0-32 14.3-32 32v592c0 17.7 14.3 32 32 32h698c13 0 24.8-7.9 29.7-20l134-332c1.5-3.8 2.3-7.9 2.3-12c0-17.7-14.3-32-32-32zM136 256h188.5l119.6 114.4H748V444H238c-13 0-24.8 7.9-29.7 20L136 643.2V256zm635.3 512H159l103.3-256h612.4L771.3 768z" fill="white" /></svg>
-                <h3 class="title" style=" color: white; flex: 1;">experiences</h3>
+                <h3 class="title" style=" color: white;">experiences</h3>
             </div>
             <ul class="profile margin-base">
                 {experiences}
             </ul>
-            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px; width: 100%">
+            <div class="icon" style="flex-direction: row; margin-top: 24px; border-radius: 4px; padding: 4px;">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48">
                     <path d="M15 8C8.925 8 4 12.925 4 19c0 11 13 21 20 23.326C31 40 44 30 44 19c0-6.075-4.925-11-11-11c-3.72 0-7.01 1.847-9 4.674A10.987 10.987 0 0 0 15 8z" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none" /></svg>
-                <h3 class="title" style=" color: white; flex: 1;">hobbies</h3>
+                <h3 class="title" style=" color: white; ">hobbies</h3>
             </div>
             <ul class="margin-base">
                 {hobbies}
@@ -244,7 +237,7 @@
         </div>
 
 
-        <div style=" width: 30%; padding: 24px 8px 24px 12px; color:white; background-color: var(--main-color);">
+        <div style=" width: 30%;  align-items: center; padding: 24px 8px 24px 12px; color:white; background-color: var(--main-color);">
             <h2 class="title">personal information</h2>
             <ul class="profile myself margin-base">
                 <li>
